@@ -12,7 +12,6 @@ const paths = {
     JS: path.resolve(__dirname, 'src/js'),
 };
 
-console.log(paths.JS)
 
 module.exports = {
     mode: 'development',
