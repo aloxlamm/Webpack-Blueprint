@@ -6,8 +6,10 @@ This is a bootstrap for webpack based projects with hot-deployment server and pr
 
 ## NPM scripts
 - start server: `npm run start`
-- build-dev, for dev-environment (to work locally): `npm run build-dev`
-- build-prod, optimized for production: `npm run build-prod`
+- build-dev: `npm run build-dev`<br>
+    for dev-environment, -> target: src/public-dev
+- build-prod, optimized for production: `npm run build-prod`<br>
+    for prod-environment, -> target: src/public
 
 ## Info
 https://webpack.js.org/
