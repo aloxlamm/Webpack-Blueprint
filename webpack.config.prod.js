@@ -62,11 +62,8 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new HtmlWebpackPlugin({
-
-            title: 'Hot Module Replacement',
             template: path.resolve(__dirname, 'src/index.html')
         }),
-        new webpack.HotModuleReplacementPlugin(),
         new CleanWebpackPlugin(),
         new MiniCssExtractPlugin({
             filename: 'main.css',
