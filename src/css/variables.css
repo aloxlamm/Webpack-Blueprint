@@ -1,0 +1,32 @@
+/* ibm plex */
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400,500,700");
+
+/* comfortaa */
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:300,400,500,700");
+
+/* material */
+@import url('https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css');
+
+
+/* VARIABLES -------------------------------------------------- */
+
+* {
+    /* COLORS */
+    --primary-color: #009688;
+    --dark-primary-color: #00796B;
+    --ligth-primary-color: #B2DFDB;
+    --primary-color-medium: rgb(0, 182, 155);
+    --dark: #181818;
+    --gray: #cccccc;
+    --light-gray: #d9d9d9;
+    --cr-light-gray: #f0f0f0;
+    --medium-gray: #cccccc;
+
+    /* FONTS */
+    --primary-font: 'IBM Plex Sans', sans-serif;
+    --secondary-font: 'Comfortaa';
+
+
+    /* material */
+    --mdc-theme-primary: #009688;
+}

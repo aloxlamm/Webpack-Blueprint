@@ -1,0 +1,33 @@
+{
+  "name": "crumbl_os",
+  "version": "1.0.0",
+  "description": "Crumbl OS Frontend Application",
+  "scripts": {
+    "build": "webpack --config \"webpack.config.dev.js\"",
+    "build-dev": "webpack --config \"webpack.config.js\"",
+    "start": "webpack --watch & webpack-dev-server --open-page 'index.html'",
+    "watch": "webpack --watch"
+  },
+  "author": "phoenix-systems.ch",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "@fortawesome/fontawesome-pro": "^5.8.2",
+    "clean-webpack-plugin": "^2.0.2",
+    "css-loader": "^2.1.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "jquery": "^3.4.1",
+    "lit-html": "^1.1.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.phoenix-systems.ch/Phoenix_OS/PhOS_Core.git"
+  }
+}
