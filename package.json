@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Crumbl OS Frontend Application",
   "scripts": {
-    "build": "webpack --config \"webpack.config.js\"",
+    "build-dev": "webpack --config \"webpack.config.js\"",
     "build-prod": "webpack --config \"webpack.config.prod.js\"",
     "start": "webpack --watch & webpack-dev-server --open-page 'index.html'",
     "watch": "webpack --watch"

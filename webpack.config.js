@@ -7,7 +7,7 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 
 const paths = {
-    PUBLIC: path.resolve(__dirname, 'public'),
+    PUBLIC: path.resolve(__dirname, 'public-dev'),
     SRC: path.resolve(__dirname, 'src'),
     JS: path.resolve(__dirname, 'src/js'),
 };
@@ -20,8 +20,8 @@ module.exports = {
         app: path.join(paths.JS, 'App.js')
     },
     output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'Crumbl_OS.js'
+        path: path.resolve(__dirname, 'public-dev'),
+        filename: 'App.js'
     },
     devServer: {
         contentBase: paths.PUBLIC,
@@ -40,17 +40,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: [
-                    {
-                        loader: MiniCssExtractPlugin.loader,
-                        options: {
-                            // you can specify a publicPath here
-                            // by default it uses publicPath in webpackOptions.output
-                            publicPath: '../',
-                            hmr: process.env.NODE_ENV === 'development',
-                        },
-                    },
-                    'css-loader',
+                use: ['style-loader','css-loader',
                 ],
             }
         ]
@@ -62,8 +52,6 @@ module.exports = {
             jQuery: 'jquery'
         }),
         new HtmlWebpackPlugin({
-
-            title: 'Hot Module Replacement',
             template: path.resolve(__dirname, 'src/index.html')
         }),
         new webpack.HotModuleReplacementPlugin(),

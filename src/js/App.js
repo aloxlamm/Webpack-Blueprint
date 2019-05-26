@@ -21,4 +21,4 @@ const template = html`
 `;
 
 
-render(template, $('body')[0])
+render(template, $('crumbl-os')[0]);
