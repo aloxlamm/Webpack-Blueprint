@@ -6,7 +6,6 @@ BLUEPRINT WEBPACK PROJECT
 VERSION: 1.0
 --------------------------------------------------------------------------------------------------------- */
 
-import 'jquery';
 import {render, html} from 'lit-html';
 
 
@@ -16,9 +15,13 @@ import '../css/page.css';
 
 
 
-const template = html`
-    <h1>TEST</h1>
+
+const template = (title, text) =>  html`
+    <h1>${title}</h1>
+    <p>${text}</p>
 `;
 
 
-render(template, $('crumbl-os')[0]);
+const t = 'Webpack Setup Project'
+const txt = 'This is a bootstrap for webpack based projects with hot-deployment server and prod/dev output options.'
+render(template(t, txt), $('crumbl-os')[0]);

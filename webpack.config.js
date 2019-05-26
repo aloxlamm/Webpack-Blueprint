@@ -21,7 +21,7 @@ module.exports = {
     },
     output: {
         path: path.resolve(__dirname, 'public-dev'),
-        filename: 'App.js'
+        filename: 'js/App.js'
     },
     devServer: {
         contentBase: paths.PUBLIC,
@@ -72,6 +72,10 @@ module.exports = {
             {
                 from: 'src/fonts', 
                 to: 'fonts'
+            },
+            {
+                from: 'src/plugins',
+                to: 'plugins'
             }
         ])
     ]
