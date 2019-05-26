@@ -12,5 +12,5 @@ This is a bootstrap for webpack based projects with hot-deployment server and pr
     for prod-environment, target dir: src/public
 
 ## Userfull links
-https://webpack.js.org/
+https://webpack.js.org/ <br>
 https://www.valentinog.com/blog/webpack/
